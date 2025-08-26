@@ -19,3 +19,10 @@ export interface ShipmentStatsDTO {
   statusCounts: Record<ShipmentStatus, number>;
   mostCommonOrigin: string | null;
 }
+
+export interface ShipmentUpdateMessage {
+  shipmentId: number;
+  trackingNumber: string;
+  status: ShipmentStatus;
+  lastUpdatedTime: string; // ISO string
+}

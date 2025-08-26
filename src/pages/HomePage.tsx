@@ -14,6 +14,19 @@ export default function HomePage() {
       >
         View Shipments
       </Link>
+      <Link
+        to="/shipments/stats"
+        className="text-sm text-blue-600 hover:underline"
+      >
+        View Stats
+      </Link>
+
+      <Link
+        to="/shipments/map"
+        className="text-sm text-blue-600 hover:underline"
+      >
+        View Shipment Map
+      </Link>
     </div>
   );
 }
