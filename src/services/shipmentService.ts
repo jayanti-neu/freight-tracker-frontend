@@ -1,7 +1,6 @@
 import axios from "axios";
 import type {
   ShipmentStatus,
-  Priority,
   Shipment,
   ShipmentStatsDTO,
 } from "../types/shipment";
