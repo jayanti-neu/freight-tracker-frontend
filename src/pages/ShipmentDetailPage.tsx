@@ -62,7 +62,8 @@ export default function ShipmentDetailPage() {
         setDestinationCoords(destResult);
         upsert(data);
       } catch {
-        setError("Failed to load shipment");
+        setError("Failed to load shipments. Navigating to shipments...");
+        setTimeout(() => navigate("/shipments"), 1500);
       } finally {
         setLoading(false);
       }
